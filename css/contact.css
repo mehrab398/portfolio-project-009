@@ -1,0 +1,158 @@
+/*=================== contact style  =================*/
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.contact-wrapper .contact-container {
+    width: auto;
+    max-width: 45%;
+}
+
+.contact-wrapper .left-section .title-contact {
+    color: #ABB2BF;
+}
+
+.contact-wrapper .right-section {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.contact-wrapper .right-section-fa {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.contact-wrapper .right-section .masage-box {
+    border: 1px solid #abb2bf;
+    display: inline-block;
+    padding: 1rem;
+    text-align: left;
+}
+
+.contact-wrapper .right-section .masage-box .masage-title {
+    margin-bottom: 1rem;
+}
+
+.contact-wrapper .right-section .masage-box .sotial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contact-wrapper .right-section .masage-box .sotial-list .sotial-link {
+    color: #abb2bf;
+    transition: all 0.4s;
+}
+
+.contact-wrapper .right-section .masage-box .sotial-list .sotial-link:hover {
+    color: white;
+}
+
+
+/*=================== all media style  =================*/
+
+.all-media {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.all-media .title-media {
+    font-size: 2rem;
+}
+
+.all-media .title-media .title-header {
+    margin-bottom: 30px;
+}
+
+.all-media .title-media .title-header .highlit {
+    color: #C778DD;
+}
+
+.all-media .links-media {
+    font-size: 1.3rem;
+}
+
+.all-media .links-media .title-link {
+    transition: all 0.4s ease;
+    color: #abb2bf;
+}
+
+.all-media .links-media .title-link:hover {
+    color: white;
+}
+
+/* ===================================================
+   ریسپانسیو صفحه contact
+   =================================================== */
+
+@media (max-width: 1024px) {
+
+    .skils-title,
+    .contact-wrapper,
+    .all-media,
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .contact-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .contact-wrapper .contact-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-wrapper .right-section {
+        text-align: left;
+        align-self: center;
+    }
+
+    .contact-wrapper .right-section-fa {
+        text-align: left;
+        align-self: center;
+    }
+
+    .contact-wrapper .right-section .masage-box {
+        display: block;
+    }
+
+    /* بخش all-media: لینک‌ها زیر هم یا دو تا دو تا */
+    .all-media .links-media {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .all-media .links-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container .left-section,
+    .footer-container .right-section {
+        width: 100%;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,170 @@
+/*=================== about me style  =================*/
+
+.about-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 3rem;
+    position: relative;
+}
+
+
+.about-container .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-wrapper .left-section {
+    width: 50%;
+}
+
+.about-wrapper .left-section .title-discriotion {
+    color: #abb2bf;
+    margin-bottom: 1.5rem;
+}
+
+.about-wrapper .left-section .about-btn {
+    border: 1px solid #C778DD;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: all 0.4s;
+}
+
+
+.about-wrapper .left-section .about-btn:hover {
+    background: rgba(199, 120, 221, 0.181);
+}
+
+.about-wrapper .right-section {
+    position: relative;
+}
+
+.about-wrapper .right-section .img-about {
+    width: 400px;
+    height: 400px;
+    margin-top: -65px;
+    border-bottom: 1px solid #C778DD;
+}
+
+.about-wrapper .right-section .secend-shape {
+    position: absolute;
+    right: 370px;
+}
+
+
+/*=================== skils section style  =================*/
+
+.title-skils {
+    margin-top: 70px;
+}
+
+.title-skils .skills-cart {
+    display: flex;
+    gap: 1rem;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.title-skils .skills-cart .skills-box {
+    border: 1px solid #abb2bf;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.title-skils .skills-cart .skills-box .box-header {
+    border-bottom: 1px solid #abb2bf;
+    padding: 0.5rem;
+}
+
+.title-skils .skills-cart .skills-box .box-content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    color: #abb2bf;
+}
+
+
+
+/* ===================================================
+   responsiv
+=================================================== */
+
+@media (max-width: 1024px) {
+
+    .title-wapper,
+    .about-container,
+    .title-skils .skills-cart {
+        width: 90%;
+    }
+
+    .about-wrapper .right-section .img-about {
+        width: 320px;
+        height: 320px;
+    }
+
+    .about-wrapper .right-section .secend-shape {
+        right: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .title-wapper {
+        margin-top: 70px;
+    }
+
+    /* about-me: عکس زیر متن بیفته */
+    .about-wrapper {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .about-wrapper .left-section,
+    .about-wrapper .right-section {
+        width: 100%;
+    }
+
+    .about-wrapper .right-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .about-wrapper .right-section .img-about {
+        margin-top: 0;
+    }
+
+    .about-wrapper .right-section .secend-shape {
+        display: none;
+    }
+
+    /* اسکیل‌ها: دو تا دو تا کنار هم */
+    .title-skils .skills-cart {
+        flex-wrap: wrap;
+    }
+
+    .title-skils .skills-cart .skills-box {
+        width: 47%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .title-wapper .title-about-me {
+        font-size: 30px;
+    }
+
+    .about-wrapper .right-section .img-about {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .title-skils .skills-cart .skills-box {
+        width: 100%;
+    }
+}
