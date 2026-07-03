@@ -1,9 +1,14 @@
 /*=================== about me style  =================*/
+.title-wrapper {
+    margin-top: 130px;
+}
+
+
 
 .about-container {
     width: 70%;
     margin: 0 auto;
-    margin-top: 260px;
+    margin-top: 40px;
     gap: 3rem;
     position: relative;
 }
